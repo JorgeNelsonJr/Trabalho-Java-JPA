@@ -52,3 +52,45 @@ A entidade Video é ligada à entidade Category por um relacionamento "muitos pa
 
 A entidade WatchHistory (Histórico de Visualização) é a tabela de ligação central. Ela registra quem assistiu o quê e quando, conectando os objetos User e Video.
 
+Diagrama de Classe
+
+classDiagram
+    direction LR
+
+    class User {
+        + Long id
+        + String nome
+        + String email
+        --
+        + List<WatchHistory>
+    }
+
+    class Category {
+        + Long id
+        + String nome
+        --
+        + List<Video>
+    }
+
+    class Video {
+        + Long id
+        + String titulo
+        + String descricao
+        + Double avaliacao
+        + Long views
+        --
+        + Category categoria
+        + List<WatchHistory>
+    }
+
+    class WatchHistory {
+        + Long id
+        + LocalDateTime dataVisualizacao
+        --
+        + User usuario
+        + Video video
+    }
+
+    User "1" -- "*" WatchHistory : registra
+    Video "1" -- "*" WatchHistory : registra
+    Category "1" -- "*" Video : pertence_a
