@@ -4,7 +4,9 @@ Este projeto é uma demonstração de um sistema de streaming construído com Sp
 🛠️ Tecnologias Principais
 
 Spring Boot 3 para iniciar e configurar a aplicação.
+
 Spring Data JPA / Hibernate para a persistência de dados no banco.
+
 Lombok para reduzir o código repetitivo (getters, setters) nas Entidades.
 
 H2 Database (em memória), um banco de dados leve, usado para testes de desenvolvimento.
