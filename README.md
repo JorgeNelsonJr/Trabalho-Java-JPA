@@ -1,13 +1,10 @@
-📺 Sistema de Streaming (Spring Data JPA Demo)
+📺 Sistema de Streaming 
 Este projeto é uma demonstração de um sistema de streaming construído com Spring Boot 3 e Spring Data JPA. O objetivo principal é ilustrar o design da arquitetura e o mapeamento eficiente dos dados.
 
 🛠️ Tecnologias Principais
-O projeto usa ferramentas modernas e populares:
 
 Spring Boot 3 para iniciar e configurar a aplicação.
-
 Spring Data JPA / Hibernate para a persistência de dados no banco.
-
 Lombok para reduzir o código repetitivo (getters, setters) nas Entidades.
 
 H2 Database (em memória), um banco de dados leve, usado para testes de desenvolvimento.
@@ -20,10 +17,7 @@ Certifique-se de que a aplicação Spring Boot está rodando (em um terminal).
 
 2. Acesse o Console
 Abra seu navegador e use a URL padrão:
-
-URL: http://localhost:8080/h2-console
-
-(Se você mudou a porta para 8081 devido a um erro, use http://localhost:8081/h2-console)
+URL: http://localhost:8081/h2-console
 
 3. Conecte-se ao Banco de Dados
 Na tela de login do H2 Console, insira as credenciais do application.properties:
